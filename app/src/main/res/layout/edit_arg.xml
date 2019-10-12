@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/args_list_Item"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:background="#343434"
+        android:textColor="#ffffff"
+        android:textColorHint="#88ffffff"
+        android:textSize="15sp"
+        android:hint="0"
+        android:padding="1dp"
+        android:textAlignment="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp">
+
+    </EditText>
+</LinearLayout>

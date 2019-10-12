@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liczba argumentów:"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/argsTextView"
+                android:text="3"/>
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/argsPlusButton"
+                android:text="+"/>
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/argsMinusButton"
+                android:text="-"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arguemnty:"
+            android:textSize="20sp"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/argumentsListView"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Rejestry:"
+                android:paddingEnd="30dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/addRejestrButton"
+                android:text="Dodaj"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/minusRejestrButton"
+                android:text="Usuń"/>
+        </LinearLayout>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:id="@+id/rejestrListView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instrukcje:"
+                android:textSize="20sp"
+                android:paddingEnd="30dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Wyczść instrukcje"
+                android:id="@+id/cleanInstructionButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/clearCommandButton"
+                android:text="Z(n)"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/succesorCommandButton"
+                android:text="S(n)"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/changeCommandButton"
+                android:text="T(n,m)"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/ifCommandButton"
+                android:text="I(n,m,q)"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:id="@+id/instructionsListView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Wykonaj"
+                    android:id="@+id/executeButton"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Resetuj"
+                    android:id="@+id/resetButton"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
